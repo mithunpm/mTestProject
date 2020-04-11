@@ -26,6 +26,11 @@ public class TestCollectionApi {
 		System.out.println(date.compareTo(LocalDate.now()));
 		LocalTime time=LocalTime.now();
 		System.out.println(time);
+		List<Integer> list1=new ArrayList<Integer>();
+//		list.stream().collect(Collectors.toCollection(()->list1));
+		System.out.println("outtttttt"+list.stream().reduce(0,(a,b)-> a+b));
+		//System.out.println(list1);
+		System.out.println("outtttttt"+list.stream().count());
 	}
 
 }
